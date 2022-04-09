@@ -1,0 +1,157 @@
+4. Креираниот одалечен git репозиториум го клонираме локално.
+    git clone https://github.com/gzile/SI_2022_lab1_41208
+
+5. git add . #Додавање на сите промени
+   git commit -m "Add 5 items to the shopping list"  #Комитирање на измените 
+
+6.  git commit -a -m "Add quantities to the items." #Комитирање на измените со порака
+
+7. git branch branch1 #Креирање на нова гранка branch1
+   git branch branch2 #Креирање на нова гранка branch2
+
+8. #Прикажување на логовите
+$ git log
+commit 1787f7501a3eeac0dcb0630d55004cdfe43d8b71 (HEAD -> master, branch2, branch1)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:48:40 2022 +0200
+
+    Add quantities to the items
+
+commit a20b14d266715213ebf10e63c71db82c1b14c43b
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:43:27 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9299f8946e9354b099fe85916277d0c55e7d6d92 (origin/master, origin/HEAD)
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 23:19:17 2022 +0200
+
+    Update README.md
+
+commit d0ef5caa1e0c18b6d0644a5306d7725759fe1bb7
+:...skipping...
+commit 1787f7501a3eeac0dcb0630d55004cdfe43d8b71 (HEAD -> master, branch2, branch1)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:48:40 2022 +0200
+
+    Add quantities to the items
+
+commit a20b14d266715213ebf10e63c71db82c1b14c43b
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:43:27 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9299f8946e9354b099fe85916277d0c55e7d6d92 (origin/master, origin/HEAD)      
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 23:19:17 2022 +0200
+
+    Update README.md
+
+commit d0ef5caa1e0c18b6d0644a5306d7725759fe1bb7
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 20:49:36 2022 +0200
+
+    Initial commit
+	
+9. git push origin master #Синхронизирање на мастер гранката
+	
+   git checkout branch1 #Префрлање на гранката branch1
+   git push origin branch1 #Синхронизирање на branch1 гранката
+   
+   git checkout branch2 #Префрлање на гранката branch2
+   git push origin branch2 #Синхронизирање на branch2 гранката
+   
+10. git checkout branch1 #Префрлање на гранката branch1
+
+11. git commit -a -m "Change quantity of item #5" #Додавање и комитирање на промените
+
+12. git checkout master
+
+13. git commit -a -m "Change quantity of item #2" #Додавање и комитирање на промените
+
+14. 
+	git push origin master #Синхронизирање на мастер гранката
+	
+    git checkout branch1 #Префрлање на гранката branch1
+    git push origin branch1 #Синхронизирање на branch1 гранката
+   
+    git checkout branch2 #Префрлање на гранката branch2
+	git push origin branch2 #Синхронизирање на branch2 гранката
+
+15. git checkout branch2 #Префрлање на гранката branch2
+
+16. git commit -a -m "Modify item #4" #Додавање и комитирање на промените
+
+17. git log
+commit 59531071ae5fcb28ec5364ae6a275e5dc10bb46e (HEAD -> branch2)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sun Apr 10 00:30:19 2022 +0200
+
+    Modify item #4
+
+commit 1787f7501a3eeac0dcb0630d55004cdfe43d8b71 (origin/branch2)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:48:40 2022 +0200
+
+    Add quantities to the items
+
+commit a20b14d266715213ebf10e63c71db82c1b14c43b
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:43:27 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9299f8946e9354b099fe85916277d0c55e7d6d92
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 23:19:17 2022 +0200
+
+    Update README.md
+
+commit d0ef5caa1e0c18b6d0644a5306d7725759fe1bb7
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 20:49:36 2022 +0200
+
+    Initial commit
+
+18. git add . #Додавање на промените
+	git commit --amend -m "Modify item #4 and add item #6" #Комитирање со промена на последната порака на комитот
+	
+19. git log
+commit c3942069827878cdfdd90d9b02be498baafcd8cf (HEAD -> branch2)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sun Apr 10 00:30:19 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 1787f7501a3eeac0dcb0630d55004cdfe43d8b71 (origin/branch2)
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:48:40 2022 +0200
+
+    Add quantities to the items
+
+commit a20b14d266715213ebf10e63c71db82c1b14c43b
+Author: Goce Zhileski <gocezile@gmail.com>
+Date:   Sat Apr 9 23:43:27 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9299f8946e9354b099fe85916277d0c55e7d6d92
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 23:19:17 2022 +0200
+
+    Update README.md
+
+commit d0ef5caa1e0c18b6d0644a5306d7725759fe1bb7
+Author: Goce <gzile@users.noreply.github.com>
+Date:   Sat Apr 9 20:49:36 2022 +0200
+
+    Initial commit
+
+20. git checkout master #Префрлање на мастер гранка
+    git merge branch1   #Спојување на гранката branch1 во мастер
+
+21. git merge branch1   #Спојување на гранката branch2 во мастер при тоа се појавија конфликти кои мораше да се разрешат. По разрешувањето и додавање и комитирање.
+	git commit -a -m "Merge conflicts"  
+
